@@ -1,0 +1,74 @@
+.Post {
+    width: 100%;
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the post and add vertical spacing */
+    border: 1px solid #ddd; /* Light border around the post */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Hide any overflowing content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background for the post */
+  }
+  
+  .Post img,
+  .Post video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below images/videos */
+  }
+  
+  .postReact {
+    display: flex;
+    justify-content: space-between; /* Align icons with space in between */
+    align-items: center; /* Center icons vertically */
+    padding: 10px 15px; /* Padding around icons */
+  }
+  
+  .postReact img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    cursor: pointer; /* Pointer cursor for clickable icons */
+  }
+  
+  .postReact img:hover {
+    opacity: 0.7; /* Slightly reduce opacity on hover for visual feedback */
+  }
+  
+  span {
+    display: block;
+    padding: 5px 15px; /* Padding for the text */
+  }
+  
+  .detail {
+    padding: 0 15px;
+    margin-top: 10px; /* Space above the detail section */
+  }
+  
+  .detail b {
+    color: #333; /* Dark color for the username */
+  }
+  
+  .detail span {
+    color: #555; /* Slightly lighter color for description */
+  }
+  
+  .detail span:first-child {
+    display: block; /* Make the username stand out */
+    margin-bottom: 5px; /* Space between username and description */
+  }
+  
+  span {
+    color: var(--gray); /* Use a variable for the text color */
+    font-size: 12px; /* Smaller font size for likes count */
+  }
+  
+  @media (max-width: 768px) {
+    .Post {
+      margin: 10px; /* Reduce margin on smaller screens */
+    }
+  
+    .postReact img {
+      width: 20px; /* Smaller icons on smaller screens */
+      height: 20px;
+    }
+  }
+  
